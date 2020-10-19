@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'application'
+
+
+
+mainClassName = 'PBO10K.NIM10119905.Latihan3.Input.PBO10K10119905Latihan3'
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testImplementation     'junit:junit:4.13'
+}
+run{
+    standardInput= System.in 
+}
